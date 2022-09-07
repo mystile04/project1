@@ -1,0 +1,761 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+}
+
+/* for header */
+header {
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 90px;
+    width: 83%;
+    border-bottom: 1px solid black;
+}
+
+.logo a h2 {
+    color: black;
+    font-size: 30px;
+}
+
+.logo a h2 span {
+    color: darkred;
+}
+
+nav ul li {
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav ul li a {
+    position: relative;
+    color: gray;
+    font-size: 17px;
+    line-height: 60px;
+    transition: 0.5s;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    background-color: darkred;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -3px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li a:hover {
+    color: black;
+
+}
+
+nav ul ul {
+    position: absolute;
+    top: 60px;
+    display: none;
+}
+
+nav ul ul li {
+    width: 150px;
+    display: list-item;
+}
+
+nav ul li:hover ul {
+    display: block;
+    background-color: white;
+}
+
+nav ul ul li a:hover {
+    color: darkred;
+
+}
+
+button {
+    background-color: darkred;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 50px;
+    border-style: none;
+    cursor: pointer;
+}
+
+button a {
+    color: white;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: red;
+}
+
+/* home section */
+#home {
+    height: 700px;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: lightgray;
+}
+
+#text {
+    float: left;
+    margin-top: 20%;
+    height: 270px;
+}
+
+#text button {
+    margin-top: 40px;
+    width: 162px;
+    height: 45px;
+}
+
+#text button:hover {
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.wath-yt {
+    background-color: red;
+    display: inline;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.wath-yt a span {
+    color: black;
+    font-size: 20px;
+}
+
+#text h1 {
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 200;
+    color: gray;
+    width: 400px;
+}
+
+#text p {
+    color: gray;
+    margin-top: 10%;
+    width: 400px;
+    font-size: 20px;
+}
+
+#text a span:hover {
+    color: darkred;
+    transition: 0.5s;
+}
+
+#image {
+    float: right;
+    margin-top: 12%;
+    text-align: center;
+    width: 40%;
+    height: 70%;
+}
+
+#image img {
+    height: 450px;
+}
+
+/* about section */
+#about {
+    padding-left: 7%;
+    padding-right: 7%;
+    height: 800px;
+    background-color: white;
+}
+
+#header-learn-about {
+    text-align: center;
+    margin-top: 3%;
+}
+
+#header-learn-about h2 {
+    text-transform: uppercase;
+    color: gray;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+#header-learn-about p {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 30;
+    letter-spacing: 0.2m;
+}
+
+#header-learn-about p span {
+    color: red;
+}
+
+#dining-img {
+    float: left;
+}
+
+#dining-img img {
+    width: 550px;
+    height: 520px;
+}
+
+
+.container2 {
+    color: gray;
+    height: 500px;
+    float: right;
+}
+
+#text2 p {
+    width: 380px;
+}
+
+#table-img {
+    float: right;
+    position: relative;
+}
+
+#table-img img {
+    margin-top: 20px;
+    width: 380px;
+
+}
+
+#table-img a {
+    position: absolute;
+    left: 41%;
+    bottom: 33%;
+
+}
+
+#table-img a i {
+    color: red;
+    font-size: 70px;
+}
+
+/* menu section */
+#menu {
+    height: 1100px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: lightgray;
+}
+
+.header-menu {
+    padding-top: 3%;
+    text-align: center;
+}
+
+.header-menu h2 {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: gray;
+}
+
+.header-menu h1 {
+    text-transform: uppercase;
+    color: gray;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.header-menu span {
+    color: red;
+}
+
+#food-list {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#food-list ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+#food-list ul li a {
+    color: gray;
+    font-size: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid gray;
+}
+
+#food-list ul li a:hover {
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+#starter {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#starter h2 {
+    text-transform: uppercase;
+    color: gray;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+#starter p {
+    color: darkred;
+    font-size: 45px;
+}
+
+.menu-img {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.menu-img img {
+    height: 250px;
+    width: 250px;
+}
+
+#chicken,
+#beef,
+#fish {
+    text-align: center;
+
+}
+
+#chicken h3,
+#beef h3,
+#fish h3 {
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+#chicken h2,
+#beef h2,
+#fish,
+h2 {
+    margin-top: 5px;
+    color: red;
+}
+
+.menu-img2 {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-img2 img {
+    height: 250px;
+    width: 250px;
+}
+
+#fries,
+#pork,
+#vagetable {
+    text-align: center;
+
+}
+
+#fries h3,
+#pork h3,
+#vagetable h3 {
+    margin-top: 10px;
+    font-size: 25px;
+}
+#fries h2,
+#pork h2,
+#vagetable h2 {
+    margin-top: 5px;
+    color: red;
+}
+
+/* booking section */
+#booking {
+    background-color: white;
+    height: 700px;
+    position: relative;
+}
+
+.header-book {
+    text-align: center;
+    padding-top: 3%;
+}
+
+.header-book p {
+    color: gray;
+    text-transform: uppercase;
+}
+
+.header-book h1 {
+    margin-top: 20px;
+    color: black;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.header-book span {
+    color: red;
+}
+
+.book-form {
+    position: absolute;
+    top: 25%;
+    left: 33%;
+    width: 35%;
+    height: 52%;
+    background-color: lightgray;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.form-input {
+    margin-top: 5px;
+}
+
+.form-input input {
+    width: 45%;
+    padding-left: 5px;
+    padding: 5px;
+    padding-bottom: 5px;
+    height: 30px;
+}
+
+.form-txtarea {
+    margin-top: 5px;
+}
+
+.form-txtarea textarea {
+    width: 45%;
+    padding-left: 5px;
+    padding: 5px;
+    padding-bottom: 5px;
+    height: 70px;
+}
+
+.book-sub button {
+    color: white;
+}
+
+/* footer section */
+footer {
+    height: 300px;
+    background-color: black;
+
+}
+
+.second-footer {
+    height: 120px;
+    margin-left: 120px;
+    margin-right: 120px;
+    padding-right: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    border-bottom: gray solid 1px;
+}
+
+.address h2,
+.reservation h2,
+.opening-hours h2,
+.follow-us h2 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.address p,
+.reservation p,
+.opening-hours p {
+    color: gray;
+}
+
+.follow-us i {
+    color: gray;
+}
+
+.follow-us a {
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.last-footer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.last-footer p {
+    color: gray;
+}
+
+.last-footer h4 {
+    color: gray;
+    margin-top: 5px;
+
+}
+
+.last-footer span {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.last-footer h4 a {
+    color: white;
+}
+
+/* media querry lines */
+@media (min-width: 1400px)
+{
+    #home
+    {
+        padding-left: 17%;
+        padding-right: 17%;
+    }
+    #about
+    {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+@media (max-width: 1120px) {
+
+    #about {
+        height: 1100px;
+        background-color: white;
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+
+    #dining-img {
+        float: none;
+        text-align: center;
+    }
+
+    #dining-img img {
+        width: 555px;
+        height: 400px;
+    }
+
+    .container2 {
+        color: gray;
+        height: 500px;
+        float: none;
+    }
+    #text2 p {
+        width: 100%;
+    }
+
+    #table-img {
+        float: none;
+        position: relative;
+        text-align: center;
+    }
+
+    #table-img img {
+        margin-top: 20px;
+        width: 400px;
+
+    }
+
+    #table-img a {
+        position: absolute;
+        left: 45%;
+        bottom: 33%;
+
+    }
+
+    #table-img a i {
+        color: red;
+        font-size: 70px;
+    }
+    /* for menu */
+    #menu
+    {
+        height: 1000px;
+    }
+    .menu-img {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-around;
+    
+    }
+    
+    .menu-img img {
+        height: 150px;
+        width: 150px;
+    }
+    
+    .menu-img2 {
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .menu-img2 img {
+        height: 150px;
+        width: 150px;
+    }
+
+    /* for footer */
+    footer {
+        height: 400px;
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+    
+    .second-footer {
+        height: 120px;
+        margin-left: 15%;
+        margin-right: -16%;
+        border-bottom: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    .follow-us i {
+        color: gray;
+    }
+    
+    .follow-us a {
+        font-size: 25px;
+        margin-left: 10px;
+    }
+    
+    .last-footer {
+        text-align: center;
+        padding-top: 20px;
+        margin-top: 80px;
+        border-top: 1px gray solid;
+    }
+
+}
+@media (max-width: 930px)
+{
+    #home {
+        height: 900px;
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+    
+    #text {
+        float: none;
+        margin-top: 0%;
+        padding-top: 30%;
+        height: 270px;
+        text-align: center;
+    }
+
+    #text h1 {
+        font-family: 'Courier New', Courier, monospace;
+        text-transform: uppercase;
+        font-size: 30px;
+        font-weight: 200;
+        color: gray;
+        width: 100%;
+    }
+    #text p {
+        color: gray;
+        margin-top: 5%;
+        width: 100%;
+    }
+    #image {
+        float: none;
+        margin-top: -15%;
+        text-align: center;
+        width: 100%;
+        height: 50%;
+    }
+    #image img {
+        height: 450px;
+    }
+
+    /* for booking */
+    #booking {
+        background-color: white;
+        height: 700px;
+        position: relative;
+    }
+    
+    .header-book {
+        text-align: center;
+        padding-top: 3%;
+    }
+    
+    .header-book p {
+        color: gray;
+        text-transform: uppercase;
+    }
+    
+    .header-book h1 {
+        margin-top: 20px;
+        color: black;
+        text-transform: uppercase;
+        font-size: 30px;
+        font-family: sans-serif;
+    }
+    
+    .header-book span {
+        color: red;
+    }
+    
+    .book-form {
+        position: absolute;
+        top: 25%;
+        left: 33%;
+        width: 35%;
+        height: 52%;
+        background-color: lightgray;
+        text-align: center;
+        padding-top: 40px;
+    }
+    
+    .form-input {
+        margin-top: 5px;
+    }
+    
+    .form-input input {
+        width: 60%;
+        padding-left: 5px;
+        padding: 5px;
+        padding-bottom: 5px;
+        height: 30px;
+    }
+    
+    .form-txtarea {
+        margin-top: 5px;
+    }
+    
+    .form-txtarea textarea {
+        width: 60%;
+        padding-left: 5px;
+        padding: 5px;
+        padding-bottom: 5px;
+        height: 70px;
+    }
+    
+    .book-sub button {
+        color: white;
+    }
+}
